@@ -22,5 +22,5 @@ app.ticker.add(() => {
       dots.circle(x, y, Math.max(1, 8 - distance / 30));
     }
   }
-  dots.fill("#ffff");
+  dots.fill("#750358");
 });
