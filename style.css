@@ -1,7 +1,7 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   background-color: #050510;
   color: white;
 }
@@ -34,4 +34,57 @@ main {
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
+}
+
+/* Gör hemsidan bredare */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+/* Text till vänster, bilder till höger */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Textdelen */
+.about {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Bilddelen */
+.gallery-section {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Större namn */
+h1 {
+  font-size: 64px;
+  letter-spacing: -2px;
+}
+
+/* Lite luftigare text */
+p {
+  line-height: 1.8;
+}
+
+/* Anpassning för mindre skärmar */
+@media (max-width: 800px) {
+  .content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 44px;
+  }
 }
