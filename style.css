@@ -17,8 +17,9 @@ canvas {
 main {
   max-width: 40rem;
   padding: 2rem;
+  margin: 0 auto;
+  text-align: center;
 }
-
 
 /* Bilderna från våra fem världar */
 .world-gallery {
@@ -30,8 +31,25 @@ main {
 
 /* Gör bilderna mindre och lika stora */
 .world-gallery img {
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 8px;
+  box-shadow: 0 0 15px rgba(150, 100, 255, 0.25);
+}
+
+
+h1 {
+  font-size: 45px;
+   color: #d66fff;
+}
+
+h2 {
+  font-size: 30px;
+   color: #d66fff;
+}
+
+p {
+  color: #c8c8d8;
+  line-height: 1.8;
 }
