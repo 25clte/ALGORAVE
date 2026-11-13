@@ -1,4 +1,5 @@
 
+/* Bakgrundsfärg, text design + färg*/
 body {
   margin: 0;
   font-family: sans-serif;
@@ -14,6 +15,7 @@ canvas {
   z-index: -1;
 }
 
+/*Bestämmer sidans bredd och placering*/
 main {
   max-width: 40rem;
   padding: 2rem;
@@ -21,7 +23,8 @@ main {
   text-align: center;
 }
 
-/* Bilderna från våra fem världar */
+/* Bilderna från våra fem världar placeras brevid varandra */
+/*Om de inte får plats flyttas de ner till nästa rad*/
 .world-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +32,8 @@ main {
   gap: 12px;
 }
 
-/* Gör bilderna mindre och lika stora */
+/* Gör bilderna till samma storlek med rundade hörn */
+/* Lagt till en lila skugga för att passa rymdtemat */
 .world-gallery img {
   width: 300px;
   height: 300px;
@@ -49,6 +53,7 @@ h2 {
    color: #d66fff;
 }
 
+/*för att göra det mer lättläst*/
 p {
   color: #c8c8d8;
   line-height: 1.8;
