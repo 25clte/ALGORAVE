@@ -58,3 +58,31 @@ p {
   color: #c8c8d8;
   line-height: 1.8;
 }
+
+
+/* Demovideon anpassas efter hemsidans bredd */
+video {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Placerar demovideon och bilden bredvid varandra */
+.demo-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Anpassar storleken på video och bild */
+.demo-gallery video,
+.demo-gallery img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
